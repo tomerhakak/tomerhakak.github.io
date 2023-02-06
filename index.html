@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tomer hakak test site</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hello from me!</h1>
+    <div class="wrapper">
+        <div class="modalForm">
+            <div class="actionBtns">   
+                <button class="actionBtn signupBtn">singup</button>
+                <button class="actionBtn loginupBtn">login</button>
+                <button class="moveBtn ">Singup</button>
+                
+            </div>
+            <div class="userForm">
+                <form action="insertUser.php" class="form singup singupForm" method="POST" >
+                    <div class="inputgroup">
+                        <input type="text" placeholder="Username" autocomplete="off" id="Username" name="Username">
+                    </div> 
+                    <div class="inputgroup">
+                        <input type="email" placeholder="Email" autocomplete="off" name="Email" id="Email">
+                    </div>
+                    <div class="inputgroup">    
+                        <input type="email" placeholder="Email_confirmation" autocomplete="off" name="Email_confirmation" id="Email_confirmation">
+                    </div> 
+                    <div class="inputgroup">     
+                        <input type="password" placeholder="Password" autocomplete="off" name="Password" id="Password">
+                    </div> 
+                    <div class="inputgroup">     
+                        <input type="password" placeholder="password confirmation" autocomplete="off" name="password_confirmation" id="password_confirmation">
+                    </div>
+                    <div>
+                        <button type="submit" class="submitBtn singup">Singup</button>
+                    </div> 
+                    </div>
+                </form>
+                
+
+
+                <form action="login.php" class="form login" method="POST">
+
+                    <div class="inputgroup">
+                        <input type="email" placeholder="Email" autocomplete="off" name="Email_login" id="Email_login">
+                    </div>
+
+                    <div class="inputgroup">     
+                        <input type="password" placeholder="Password" autocomplete="off" name="Password_login" id="Password_login">
+                    </div> 
+                    
+                    <div class="inputgroup">     
+                        <button type="submit" class="submitBtn">Login</button>
+                    </div> 
+                    </div>
+                    
+
+                    </form>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>  
+    
 </body>
 </html>
